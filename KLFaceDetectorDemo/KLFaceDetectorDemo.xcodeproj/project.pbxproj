@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80727614178161C40048BADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80727613178161C40048BADE /* UIKit.framework */; };
+		80727616178161C40048BADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80727615178161C40048BADE /* Foundation.framework */; };
+		80727618178161C40048BADE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80727617178161C40048BADE /* CoreGraphics.framework */; };
+		8072761E178161C40048BADE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8072761C178161C40048BADE /* InfoPlist.strings */; };
+		80727620178161C40048BADE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8072761F178161C40048BADE /* main.m */; };
+		80727624178161C40048BADE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80727623178161C40048BADE /* AppDelegate.m */; };
+		80727626178161C40048BADE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80727625178161C40048BADE /* Default.png */; };
+		80727628178161C40048BADE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80727627178161C40048BADE /* Default@2x.png */; };
+		8072762A178161C40048BADE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80727629178161C40048BADE /* Default-568h@2x.png */; };
+		8072762D178161C40048BADE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8072762C178161C40048BADE /* ViewController.m */; };
+		8072763C178161E00048BADE /* KLFaceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8072763B178161E00048BADE /* KLFaceDetector.m */; };
+		8072763E178162330048BADE /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072763D178162330048BADE /* CoreImage.framework */; };
+		80727640178164640048BADE /* Test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8072763F178164640048BADE /* Test.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80727610178161C40048BADE /* KLFaceDetectorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLFaceDetectorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80727613178161C40048BADE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80727615178161C40048BADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80727617178161C40048BADE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8072761B178161C40048BADE /* KLFaceDetectorDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KLFaceDetectorDemo-Info.plist"; sourceTree = "<group>"; };
+		8072761D178161C40048BADE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8072761F178161C40048BADE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80727621178161C40048BADE /* KLFaceDetectorDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KLFaceDetectorDemo-Prefix.pch"; sourceTree = "<group>"; };
+		80727622178161C40048BADE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80727623178161C40048BADE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80727625178161C40048BADE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		80727627178161C40048BADE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		80727629178161C40048BADE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8072762B178161C40048BADE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8072762C178161C40048BADE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8072763A178161E00048BADE /* KLFaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFaceDetector.h; sourceTree = "<group>"; };
+		8072763B178161E00048BADE /* KLFaceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFaceDetector.m; sourceTree = "<group>"; };
+		8072763D178162330048BADE /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		8072763F178164640048BADE /* Test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8072760D178161C40048BADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8072763E178162330048BADE /* CoreImage.framework in Frameworks */,
+				80727614178161C40048BADE /* UIKit.framework in Frameworks */,
+				80727616178161C40048BADE /* Foundation.framework in Frameworks */,
+				80727618178161C40048BADE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80727607178161C40048BADE = {
+			isa = PBXGroup;
+			children = (
+				80727619178161C40048BADE /* KLFaceDetectorDemo */,
+				80727612178161C40048BADE /* Frameworks */,
+				80727611178161C40048BADE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80727611178161C40048BADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80727610178161C40048BADE /* KLFaceDetectorDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80727612178161C40048BADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8072763D178162330048BADE /* CoreImage.framework */,
+				80727613178161C40048BADE /* UIKit.framework */,
+				80727615178161C40048BADE /* Foundation.framework */,
+				80727617178161C40048BADE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80727619178161C40048BADE /* KLFaceDetectorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				80727622178161C40048BADE /* AppDelegate.h */,
+				80727623178161C40048BADE /* AppDelegate.m */,
+				8072762B178161C40048BADE /* ViewController.h */,
+				8072762C178161C40048BADE /* ViewController.m */,
+				80727639178161E00048BADE /* KLFaceDetector */,
+				8072761A178161C40048BADE /* Supporting Files */,
+			);
+			path = KLFaceDetectorDemo;
+			sourceTree = "<group>";
+		};
+		8072761A178161C40048BADE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8072763F178164640048BADE /* Test.jpg */,
+				8072761B178161C40048BADE /* KLFaceDetectorDemo-Info.plist */,
+				8072761C178161C40048BADE /* InfoPlist.strings */,
+				8072761F178161C40048BADE /* main.m */,
+				80727621178161C40048BADE /* KLFaceDetectorDemo-Prefix.pch */,
+				80727625178161C40048BADE /* Default.png */,
+				80727627178161C40048BADE /* Default@2x.png */,
+				80727629178161C40048BADE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80727639178161E00048BADE /* KLFaceDetector */ = {
+			isa = PBXGroup;
+			children = (
+				8072763A178161E00048BADE /* KLFaceDetector.h */,
+				8072763B178161E00048BADE /* KLFaceDetector.m */,
+			);
+			path = KLFaceDetector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8072760F178161C40048BADE /* KLFaceDetectorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80727636178161C40048BADE /* Build configuration list for PBXNativeTarget "KLFaceDetectorDemo" */;
+			buildPhases = (
+				8072760C178161C40048BADE /* Sources */,
+				8072760D178161C40048BADE /* Frameworks */,
+				8072760E178161C40048BADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLFaceDetectorDemo;
+			productName = KLFaceDetectorDemo;
+			productReference = 80727610178161C40048BADE /* KLFaceDetectorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80727608178161C40048BADE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = KLStudio;
+			};
+			buildConfigurationList = 8072760B178161C40048BADE /* Build configuration list for PBXProject "KLFaceDetectorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80727607178161C40048BADE;
+			productRefGroup = 80727611178161C40048BADE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8072760F178161C40048BADE /* KLFaceDetectorDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8072760E178161C40048BADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8072761E178161C40048BADE /* InfoPlist.strings in Resources */,
+				80727626178161C40048BADE /* Default.png in Resources */,
+				80727628178161C40048BADE /* Default@2x.png in Resources */,
+				8072762A178161C40048BADE /* Default-568h@2x.png in Resources */,
+				80727640178164640048BADE /* Test.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8072760C178161C40048BADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80727620178161C40048BADE /* main.m in Sources */,
+				80727624178161C40048BADE /* AppDelegate.m in Sources */,
+				8072762D178161C40048BADE /* ViewController.m in Sources */,
+				8072763C178161E00048BADE /* KLFaceDetector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8072761C178161C40048BADE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8072761D178161C40048BADE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80727634178161C40048BADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80727635178161C40048BADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80727637178161C40048BADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KLFaceDetectorDemo/KLFaceDetectorDemo-Prefix.pch";
+				INFOPLIST_FILE = "KLFaceDetectorDemo/KLFaceDetectorDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80727638178161C40048BADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KLFaceDetectorDemo/KLFaceDetectorDemo-Prefix.pch";
+				INFOPLIST_FILE = "KLFaceDetectorDemo/KLFaceDetectorDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8072760B178161C40048BADE /* Build configuration list for PBXProject "KLFaceDetectorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80727634178161C40048BADE /* Debug */,
+				80727635178161C40048BADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80727636178161C40048BADE /* Build configuration list for PBXNativeTarget "KLFaceDetectorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80727637178161C40048BADE /* Debug */,
+				80727638178161C40048BADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80727608178161C40048BADE /* Project object */;
+}
