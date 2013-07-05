@@ -1,8 +1,9 @@
 KLFaceDetector
 ==============
 
-A face detector for detecting a face in an image, provided by kinglonghuang @ KLStudio
-You can specify the face size, whether should fast, when KLFaceDetector done, you can get the image via a completion block
+A face detector for detecting a face in an image, provided by kinglonghuang @ KLStudio <br>
+You can specify the image size for output, and whether should apply a fast analysis on the input;
+When KLFaceDetector done, you can get the image via a completion block
 
 ##How to use
 Please refer to the KLFaceDetectorDemo.
