@@ -1,3 +1,4 @@
+xcuserdata
+project.xcworkspace
+*.xcuserdata
 .DS_Store
-KLFaceDetectorDemo/KLFaceDetectorDemo.xcodeproj/xcuserdata
-KLFaceDetectorDemo/KLFaceDetectorDemo.xcodeproj/project.xcworkspace/xcuserdata
