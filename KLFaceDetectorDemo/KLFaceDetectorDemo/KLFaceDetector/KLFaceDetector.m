@@ -120,14 +120,14 @@
                 CGRect faceFrame = CGRectMake(xPos, yPos, bounds.size.width, bounds.size.height);
                 CGRect fixedFrame = [self frameForSuggestSize:imgSize faceFrame:faceFrame imageFrame:CGRectMake(0, 0, img.size.width, img.size.height)];
                 CGImageRef subImageRef = CGImageCreateWithImageInRect(img.CGImage, fixedFrame);
-                UIImage * resultImg = [UIImage imageWithCGImage:subImageRef];
+                UIImage * resultImg = [UIImage imageWithCGImage:(__bridge CGImageRef)CFBridgingRelease(subImageRef)];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     completion(resultImg);
                 });
             }else {
                 CGRect centerFrame = [self centerFrameForSize:imgSize inFrame:CGRectMake(0, 0, img.size.width, img.size.height)];
                 CGImageRef subImageRef = CGImageCreateWithImageInRect(img.CGImage, centerFrame);
-                UIImage * resultImg = [UIImage imageWithCGImage:subImageRef];
+                UIImage * resultImg = [UIImage imageWithCGImage:(__bridge CGImageRef)CFBridgingRelease(subImageRef)];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     completion(resultImg);
                 });
