@@ -11,5 +11,5 @@ KLFaceDectector is powered by CoreImage in iOS5.0
 Please refer to the KLFaceDetectorDemo.
 
 ##Lisence
-Copyright (c) 2013, KLStudio(kinglong.huang) All Rights Reserved.
+Copyright (c) 2016, KLStudio(kinglong.huang) All Rights Reserved.
 Released under the New BSD Licence. (Please see the LICENSE.md)
