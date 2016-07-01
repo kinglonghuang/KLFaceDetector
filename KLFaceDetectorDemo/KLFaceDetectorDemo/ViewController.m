@@ -47,7 +47,6 @@
 
 @implementation ViewController
 
-
 #pragma mark - LifeCycle
 
 - (void)loadView
@@ -62,10 +61,9 @@
 {
     [super viewDidLoad];
     UIImage * img = [UIImage imageNamed:@"Test.jpg"];
-    NSAssert((img), @"Img not found");
     CGSize imgSize = [img size];
     CGSize imgViewSize = CGSizeMake(self.view.frame.size.height/2.0*imgSize.width/imgSize.height, self.view.frame.size.height/2.0);
-    self.faceImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, imgViewSize.width, imgViewSize.height)];
+    self.faceImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, imgViewSize.width, imgViewSize.height)];
     [self.faceImgView setImage:img];
     [self.view addSubview:self.faceImgView];
     
@@ -89,9 +87,9 @@
     //remove the previous face imageView first
     [[self.view viewWithTag:FACEIMGVIEW_TAG] removeFromSuperview];
     
-    CGSize imgSize = CGSizeMake(160, 120); // you can change this size to whatever you like
+    CGSize imgSize = CGSizeMake(100, 200); // you can change this size to whatever you like
     [btn setTitle:@"Working..." forState:UIControlStateNormal];
-    [KLFaceDetector getImageWithFaceForImage:self.faceImgView.image withSize:imgSize shouldFast:YES completionHandler:^(UIImage * faceImg) {
+    [KLFaceDetector getFaceFromImage:self.faceImgView.image faceSize:imgSize shouldFast:YES completionHandler:^(UIImage * faceImg) {
         [btn setTitle:@"GetFace" forState:UIControlStateNormal];
         UIImageView * imgView = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(btn.frame)+15, CGRectGetMaxY(self.faceImgView.frame)+25, imgSize.width, imgSize.height)];
         [imgView setBackgroundColor:[UIColor darkGrayColor]];
@@ -99,16 +97,6 @@
         [imgView setImage:faceImg];
         [self.view addSubview:imgView];
     }];
-    
-    //Another way to use KLFaceDetector, Don't specify the shouldFast paramter, default is NO, this may take more time
-    
-    //    [KLFaceDetector getImageWithFaceForImage:self.faceImgView.image withSize:imgSize completionHandler:^(UIImage * faceImg) {
-    //        UIImageView * imgView = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(btn.frame)+15, CGRectGetMaxY(self.faceImgView.frame)+25, imgSize.width, imgSize.height)];
-    //        [imgView setBackgroundColor:[UIColor darkGrayColor]];
-    //        [imgView setTag:FACEIMGVIEW_TAG];
-    //        [imgView setImage:faceImg];
-    //        [self.view addSubview:imgView];
-    //    }];
 }
 
 @end

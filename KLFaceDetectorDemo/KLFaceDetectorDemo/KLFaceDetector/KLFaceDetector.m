@@ -47,7 +47,7 @@
     CIFaceFeature * chooseFaceFeature = nil;
     for (CIFaceFeature * faceFeathre in featureArray) {
         CGRect bounds = faceFeathre.bounds;
-        CGFloat  currentFaceSqu = CGRectGetWidth(bounds)*CGRectGetHeight(bounds);
+        CGFloat currentFaceSqu = CGRectGetWidth(bounds)*CGRectGetHeight(bounds);
         if (currentFaceSqu > maxFaceSquare) {
             maxFaceSquare = currentFaceSqu;
             chooseFaceFeature = faceFeathre;
@@ -103,7 +103,7 @@
 }
 #pragma mark - Interface
 
-+ (void)getImageWithFaceForImage:(UIImage *)image withSize:(CGSize)imgSize shouldFast:(BOOL)shouldFastDetect completionHandler:(void (^)(UIImage * imgWithFace))completion {
++ (void)getFaceFromImage:(UIImage *)image faceSize:(CGSize)imgSize shouldFast:(BOOL)shouldFastDetect completionHandler:(void (^)(UIImage * imgWithFace))completion {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         __block UIImage * img = [self normalizedImage:image];
         if (img) {
@@ -141,8 +141,8 @@
 
 }
 
-+ (void)getImageWithFaceForImage:(UIImage *)image withSize:(CGSize)imgSize completionHandler:(void (^)(UIImage * imgWithFace))completion {
-    [self getImageWithFaceForImage:image withSize:imgSize shouldFast:NO completionHandler:completion];
++ (void)getFaceFromImage:(UIImage *)image faceSize:(CGSize)imgSize completionHandler:(void (^)(UIImage * imgWithFace))completion {
+    [self getFaceFromImage:image faceSize:imgSize shouldFast:NO completionHandler:completion];
 }
 
 @end

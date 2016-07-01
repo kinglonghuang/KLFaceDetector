@@ -38,8 +38,8 @@
 
 @interface KLFaceDetector : NSObject
 
-+ (void)getImageWithFaceForImage:(UIImage *)image withSize:(CGSize)imgSize shouldFast:(BOOL)shouldFastDetect completionHandler:(void (^)(UIImage * imgWithFace))completion;
++ (void)getFaceFromImage:(UIImage *)image faceSize:(CGSize)imgSize shouldFast:(BOOL)shouldFastDetect completionHandler:(void (^)(UIImage * imgWithFace))completion;
 
-+ (void)getImageWithFaceForImage:(UIImage *)image withSize:(CGSize)imgSize completionHandler:(void (^)(UIImage * imgWithFace))completion;
++ (void)getFaceFromImage:(UIImage *)image faceSize:(CGSize)imgSize completionHandler:(void (^)(UIImage * imgWithFace))completion;
 
 @end
